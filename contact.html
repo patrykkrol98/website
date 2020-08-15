@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>My first website</title>
     <meta name="keywords" content="HTML, CSS, JavaScript">
+    <script src="public/validation.js" defer></script>
     <link rel="stylesheet" href="public/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -19,16 +20,14 @@
     <div class="content">
         <div class="form-container">
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your name..">
+                <input type="text" id="name" placeholder="Your name.." value="">
 
                 <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="Your email..">
+                <input type="text" id="email" placeholder="Your email.." value="">
 
                 <label for="subject">Subject</label>
                 <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-                <input type="submit" value="Submit">
-
+                <button id="submitButton" type="button">Submit</button>
         </div>
     </div>
     <footer>&copy; 2020 | Patryk Król</footer>
